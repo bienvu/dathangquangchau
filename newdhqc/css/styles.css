@@ -591,7 +591,7 @@ label {
   padding: 160px 0 120px; }
   @media (min-width: 80em) {
     .bg-type-2 {
-      padding: 150px 0 170px; } }
+      padding: 120px 0 120px; } }
   @media screen and (max-width: 63.9375em) {
     .bg-type-2 {
       background: #cf2c0e;
