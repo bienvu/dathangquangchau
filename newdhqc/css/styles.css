@@ -851,8 +851,8 @@ label {
   display: none; }
 
 .box-hero {
-  padding-bottom: 60px;
-  padding-top: 50px; }
+  padding-bottom: 80px;
+  padding-top: 40px; }
   .box-hero .section-title {
     text-transform: capitalize; }
   .box-hero .section-description {
@@ -887,7 +887,7 @@ label {
           -ms-flex-pack: justify;
               justify-content: space-between; } }
 .box-image-text {
-  margin-top: 65px;
+  margin-top: 40px;
 }
 .box-image-text__content {
   padding-right: 20px; }
