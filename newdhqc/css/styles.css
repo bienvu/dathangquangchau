@@ -303,7 +303,7 @@ figure {
   outline: 0;
   min-width: 125px;
   border-radius: 50px;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff; }
 
   .btn:focus {
@@ -343,7 +343,7 @@ figure {
     border-color: #fff;
     color: #c1392b;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     padding: 16px 30px;
     text-transform: uppercase; }
 
@@ -1212,6 +1212,8 @@ label {
     text-transform: uppercase;
     padding: 15px 40px; }
   .box-register__form {
+    position: relative;
+    z-index: 99;
     max-width: 695px;
     margin: 55px auto 0; }
   .box-register .form-wrap {
