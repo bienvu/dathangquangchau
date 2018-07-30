@@ -305,10 +305,10 @@ figure {
   border-radius: 50px;
   font-weight: 600;
   color: #fff; }
-  
+
   .btn:focus {
     box-shadow: none; }
-  
+
   .btn:active,
   .btn:hover {
     border-color: #bd382a;
@@ -318,26 +318,26 @@ figure {
             appearance: none;
     outline: 0;
     color: #fff; }
-  
+
   .btn--outline {
     background: none;
     color: #fff;
     border-color: #e09c95; }
-    
+
     .btn--outline:hover {
       background: #fff;
       border-color: #fff;
       color: #c1392b; }
-  
+
   .btn--large {
     font-size: 22px;
     padding: 10px 35px;
     min-width: 220px; }
     @media (min-width: 1280px) {
-      
+
       .btn--large {
         font-size: 32px; } }
-  
+
   .btn--bg-white {
     background: #fff;
     border-color: #fff;
@@ -346,7 +346,7 @@ figure {
     font-weight: 600;
     padding: 16px 30px;
     text-transform: uppercase; }
-    
+
     .btn--bg-white:hover {
       background: #c1392b;
       border-color: #fff;
@@ -536,10 +536,10 @@ label {
       margin-bottom: 50px; } }
 
 .padding-component {
-  padding: 50px 0; }
+  padding: 40px 0; }
   @media (min-width: 1024px) {
     .padding-component {
-      padding: 89px 0 50px; } }
+      padding: 40px 0; } }
 
 .section-title {
   text-transform: uppercase;
@@ -560,7 +560,7 @@ label {
   color: #fff;
   text-align: center;
   position: relative;
-  margin-bottom: 90px; }
+  margin-bottom: 40px; }
   .bg-type-1:before {
     background: url("../images/bg-style-1.png") no-repeat scroll 0 0 #fff;
     background-size: 100% auto;
@@ -580,7 +580,7 @@ label {
     @media (min-width: 100em) {
       .bg-type-1:before {
         height: 270px;
-        bottom: -120px; } }
+        bottom: -25px; } }
 
 .bg-type-2 {
   background: url("../images/bg-image-red.png") no-repeat scroll 0 0 transparent;
@@ -645,8 +645,8 @@ label {
   margin: 70px 0 0; }
   @media (min-width: 48em) {
     .bg-type-3 {
-      margin: 139px 0 0;
-      padding: 78px 0 20px; } }
+      margin: 125px 0 0;
+      padding: 40px 0 0px; } }
   .bg-type-3:before {
     background: url("../images/bg-image-type2.png") no-repeat scroll 0 0 transparent;
     background-size: 100% auto;
@@ -688,7 +688,7 @@ label {
   padding: 40px 0 20px; }
   @media (min-width: 100em) {
     .bg-type-4 {
-      margin: 110px 0 160px; } }
+      margin: 110px 0 60px; } }
   .bg-type-4:before {
     background: url("../images/bg-type3-top.png") no-repeat scroll 0 0 transparent;
     background-size: 100% auto;
@@ -705,7 +705,7 @@ label {
         height: 250px;
         top: -240px; } }
   .bg-type-4:after {
-    background: url("../images/bg-type3-bottom.png") no-repeat scroll 0 0 transparent;
+    background: url("../images/bg-type3-bottom.png") no-repeat scroll 0 0 #fff;
     background-size: 100% auto;
     content: '';
     left: 0;
@@ -716,9 +716,12 @@ label {
     height: 141px; }
     @media (min-width: 100em) {
       .bg-type-4:after {
-        height: 250px;
-        bottom: -240px; } }
-
+        height: 200px;
+        bottom: -80px; } }
+.container {
+    position: relative;
+    z-index: 99;
+}
 .tel {
   margin-top: 30px; }
 
@@ -875,13 +878,17 @@ label {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
+      max-width: 1000px;
+      margin: 40px auto 0;
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
-
+.box-image-text {
+  margin-top: 65px;
+}
 .box-image-text__content {
   padding-right: 20px; }
 
@@ -1013,7 +1020,7 @@ label {
 
 .box-price {
   padding-top: 0;
-  padding-bottom: 70px; }
+  padding-bottom: 50px; }
   .box-price__wrap {
     box-shadow: 0 0 15px 0px #ccc; }
   .box-price__content {
@@ -1215,11 +1222,6 @@ label {
       text-transform: uppercase;
       padding: 16px 50px; }
 
-.box-intro {
-  margin-bottom: 50px; }
-  @media (min-width: 64em) {
-    .box-intro {
-      margin-bottom: 100px; } }
   .box-intro__title {
     text-transform: uppercase;
     font-size: 16px;
@@ -1236,7 +1238,7 @@ label {
 
 .box-congcu {
   margin-bottom: -30px;
-  padding-top: 60px; }
+  padding-top: 40px; }
   .box-congcu__content h3 {
     font-size: 16px;
     text-align: center; }
@@ -1539,7 +1541,7 @@ body {
     @media (min-width: 48em) {
       .footer__middle > div {
         width: calc((100% - 43%) / 3);
-        margin-bottom: 0;
+        margin-bottom: 30px;
         padding-right: 20px; } }
   .footer__middle p {
     margin-bottom: 0; }
