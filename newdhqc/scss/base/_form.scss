@@ -1,0 +1,176 @@
+// button,
+// input[type='submit'] {
+//   @extend .btn;
+// }
+//
+%form-text,
+.form-control {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  border-bottom: rem(1px) solid #ccc;
+  box-shadow: inherit;
+  box-sizing: border-box;
+  color: $text-color;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 0;
+  transition: all .3s ease-in-out;
+  width: 100%;
+  border-radius: 0;
+
+  &::-ms-clear {
+    display: none;
+  }
+
+  &::-webkit-input-placeholder {
+    color: #8d8d8d;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: #8d8d8d;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: #8d8d8d;
+    opacity: 1;
+  }
+
+  &:-moz-placeholder {
+    color: #8d8d8d;
+    opacity: 1;
+  }
+
+  &:focus {
+    box-shadow: none;
+    outline: 0 none;
+  }
+
+  &.error {
+    border-color: $red;
+    color: $red;
+
+    &::-webkit-input-placeholder {
+      color: $red;
+    }
+
+    &::-moz-placeholder {
+      color: $red;
+    }
+
+    &:-ms-input-placeholder {
+      color: $red;
+    }
+
+    &:-moz-placeholder {
+      color: $red;
+    }
+
+    &:focus {
+      box-shadow: 0 0 rem(5px) rgba($red, 1);
+      outline: 0 none;
+    }
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
+}
+
+input[type='tel'],
+.form-url,
+.form-search,
+.form-email,
+.form-text {
+  @extend %form-text;
+}
+
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance:none;
+  background-color: $white;
+  background-image: url('../images/icon-down.png');
+  background-position: calc(100% - 15px) 50%;
+  background-repeat: no-repeat;
+  background-size: 10px auto;
+  border: 0;
+  border-bottom: 1px solid #cccccc;
+  font-size: 14px;
+  padding: 14px 0;
+  margin-bottom: rem(10px);
+  background-color: $white;
+  border-radius: 0;
+  width: 100%;
+  margin: 0;
+  color: #8d8d8d;
+
+  option {
+    color: $text-color;
+  }
+
+  &:focus {
+    color: $text-color;
+  }
+
+  [placeholder] {
+    color: #8d8d8d;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none;
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  option {
+    width: 100%;
+  }
+}
+
+
+
+label {
+  font-weight: 300;
+  display: none;
+
+  @media (max-width: 479px) {
+    font-size: 16px;
+  }
+}
+//
+// .form-textarea {
+//   @extend %form-text;
+//   height: auto;
+//   min-height: rem(200px);
+//   padding: rem(15px 25px);
+// }
+//
+// .form-item,
+// .form-actions {
+//   margin:rem(0 0 26px);
+//
+//   &.form-type-checkbox,
+//   &.form-type-radio {
+//     margin-bottom: rem(8px);
+//   }
+// }
+//
+// .form-type-checkbox,
+// .form-type-radio {
+//   label {
+//     font-weight: 400;
+//   }
+// }
+//
+// .fieldset-legend {
+//   display: inline-block;
+//   font-weight: 700;
+//   margin-bottom: rem(8px);
+// }

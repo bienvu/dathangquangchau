@@ -1,0 +1,30 @@
+.box-intro {
+  margin-bottom: 50px;
+
+  @include susy-media(desktop) {
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__image {
+    margin-bottom: 20px;
+
+    img {
+      @include susy-media(mobileTabletOnly) {
+        max-width: 150px;
+      }
+    }
+  }
+
+  &__item {
+    @include susy-media(mobileOnly) {
+      margin-bottom: 20px;
+    }
+  }
+}

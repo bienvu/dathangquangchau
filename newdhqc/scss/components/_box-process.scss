@@ -1,0 +1,44 @@
+.box-process {
+  overflow: auto;
+
+  &__top,
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+  }
+
+  &__top {
+    margin-right: 110px;
+    margin-bottom: 5px;
+    align-items: flex-end;
+  }
+
+  &__bottom {
+    margin-left: 110px;
+    margin-top: 5px;
+    align-items: flex-start;
+  }
+
+  &__content {
+    max-width: 860px;
+    margin: 0 auto;
+
+    @media (max-width: 767px) {
+      width: 860px;
+    }
+  }
+
+  &__item {
+    @media (max-width: 767px) {
+      width: 30%;
+    }
+  }
+
+  &__wrap {
+    @media (max-width: 767px) {
+      overflow: auto;
+    }
+  }
+}

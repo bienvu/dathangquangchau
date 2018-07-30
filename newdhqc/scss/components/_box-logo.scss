@@ -1,0 +1,27 @@
+.box-logo {
+  &__content {
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    a {
+      line-height: 0;
+
+      @include susy-media(mobileOnly) {
+        width: 50%;
+        padding: 0 20px;
+        margin-bottom: 20px;
+      }
+
+      @include susy-media(tablet) {
+        padding: 0 10px;
+      }
+
+      @include susy-media(desktop) {
+        max-width: 150px;
+      }
+    }
+  }
+}

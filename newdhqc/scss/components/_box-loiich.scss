@@ -1,0 +1,28 @@
+.box-loiich {
+  &__content {
+    margin-top: 30px;
+
+    @include susy-media(tablet) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 55px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 20px;
+
+    @include susy-media(tablet) {
+      width: calc((100% - 120px) / 5);
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    text-align: left;
+  }
+}

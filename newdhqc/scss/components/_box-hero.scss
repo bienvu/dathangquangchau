@@ -1,0 +1,33 @@
+.box-hero {
+  padding-bottom: 0;
+  padding-top: 50px;
+
+  .section-title {
+    text-transform: capitalize;
+  }
+  
+  .section-description {
+    margin-bottom: 28px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 9;
+  }
+
+  &__link {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+
+    @include susy-media(tablet) {
+      margin-bottom: -28px;
+    }
+  }
+
+  &__image {
+    @include susy-media(mobileTabletOnly) {
+      padding: 0 50px;
+    }
+  }
+}

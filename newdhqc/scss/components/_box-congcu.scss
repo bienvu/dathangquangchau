@@ -1,0 +1,21 @@
+.box-congcu {
+  margin-bottom: -30px;
+  padding-top: 60px;
+
+  &__content {
+    h3 {
+      font-size: 16px;
+      text-align: center;
+
+
+      @include susy-media(desktop) {
+        font-size: 18px;
+      }
+
+      @include susy-media(desktopSuperwide) {
+        padding: 0 40px;
+        font-size: 24px;
+      }
+    }
+  }
+}

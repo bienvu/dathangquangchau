@@ -1,0 +1,46 @@
+.box-video {
+  .section-description {
+    margin-bottom: 0;
+  }
+
+  &__video {
+    background: url('../images/macbook.png') no-repeat scroll center center transparent;
+    padding-bottom: 188px;
+    padding-top: 100px;
+
+    @include susy-media(tabletOnly) {
+      background-size: 660px auto;
+      padding-bottom: 130px;
+      padding-top: 70px;
+    }
+
+
+    @include susy-media(mobileOnly) {
+      background-size: 345px auto;
+      padding-bottom: 80px;
+    padding-top: 60px;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 9;
+  }
+
+
+  iframe {
+    position: relative;
+    right: -2px;
+
+    @include susy-media(tabletOnly) {
+      width: 510px;
+      height: 315px;
+    }
+
+    @include susy-media(mobileOnly) {
+      width: 262px;
+      height: 170px;
+      right: 0px;
+    }
+  }
+}

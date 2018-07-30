@@ -1,0 +1,37 @@
+.benefit {
+  .row {
+    display: flex;;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__body {
+    @media (min-width: 480px) {
+      padding-left: 38px;
+    }
+  }
+
+  &__image {
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+
+    img {
+      @media (max-width: 767px) {
+        max-width: 300px;
+        margin-bottom: 40px;
+      }
+
+      // @media (min-width: 768px) {
+      //     max-width: 350px;
+      // }
+    }
+  }
+
+  &__content {
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+    }
+  }
+}

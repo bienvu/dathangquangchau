@@ -1,0 +1,246 @@
+.box-price {
+  padding-top: 0;
+  padding-bottom: 70px;
+
+  &__wrap {
+    box-shadow: 0 0 15px 0px #ccc;
+  }
+
+  &__content {
+    padding: 30px;
+
+    @include susy-media(mobileOnly) {
+      padding: 20px;
+    }
+  }
+
+  &__title {
+    background-color: $primary-color;
+    padding: 10px;
+    color: $white;
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+
+    @include susy-media(tablet) {
+      display: flex;
+      align-items: center;
+    }
+
+    @include susy-media(mobileOnly) {
+      font-size: 15px;
+    }
+
+    span {
+      font-size: 14px;
+      margin-left: 10px;
+
+      @include susy-media(mobileOnly) {
+        width: 100%;
+        display: inline-block;
+        margin: 0;
+        font-size: 10px;
+      }
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      background: url('../images/bg-title.png') no-repeat scroll 0 0 transparent;
+      height: 100%;
+      height: 79px;
+      width: 11px;
+
+      top: 0;
+      position: absolute;
+
+      @include susy-media(mobileOnly) {
+        background-size: auto 65px;
+      }
+    }
+
+    &:before {
+      left: -10px;
+    }
+
+    &:after {
+      background: url('../images/bg-title-right.png') no-repeat scroll 0 0 transparent;
+      right: -10px;
+      transform: skewX(-360deg);
+      @include susy-media(mobileOnly) {
+        background-size: auto 65px;
+      }
+    }
+  }
+
+  &__step {
+    margin-bottom: 15px;
+
+    img {
+      padding-left: 50px;
+      padding-right: 50px;
+
+      @include susy-media(desktop) {
+        padding-left: 65px;
+      }
+
+      @include susy-media(mobileOnly) {
+        display: none;
+      }
+    }
+
+    span {
+      margin-right: 35px;
+
+      @include susy-media(desktop) {
+        margin-right: 70px;
+      }
+
+      @include susy-media(mobileOnly) {
+        display: block;
+
+        &:before {
+          content: '';
+          width: 7px;
+          height: 7px;
+          background: #fdd882;
+          display: inline-block;
+          border-radius: 100%;
+          margin-right: 10px;
+          position: relative;
+          bottom: 2px;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__pay {
+    margin-bottom: 15px;
+
+    @include susy-media(mobileOnly) {
+      text-align: center;
+    }
+
+    @include susy-media(tablet) {
+      display: flex;
+      align-items: center;
+    }
+
+    .title {
+      font-weight: 600;
+      @include susy-media(mobileOnly) {
+        margin-bottom: 10px;
+      }
+    }
+
+    .pay-step {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+
+      span {
+        width: 20px;
+        height: 20px;
+        background-color: #fdd882;
+        color: $primary-color;
+        display: inline-block;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        position: relative;
+
+        &:before {
+          content: '+';
+          position: absolute;
+          right: -20px;
+          color: #222;
+        }
+
+        &:last-child {
+          margin-right: 0;
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__body {
+    .step {
+      margin-bottom: 15px;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: $primary-color;
+        color: $white;
+        text-align: center;
+        margin-right: 5px;
+        border-radius: 100%;
+      }
+    }
+
+    .first-step:before {
+      content: '1';
+    }
+
+    .second-step:before {
+      content: '2';
+    }
+
+    .third-step:before {
+      content: '3';
+    }
+
+    .fourth-step:before {
+      content: '4';
+    }
+  }
+}
+
+.table {
+  background: #f5f5f5;
+
+  @include susy-media(mobileOnly) {
+    display: inline-block;
+    overflow: auto;
+    width: 100%;
+    max-width: inherit;
+  }
+
+  thead th {
+    background: $primary-color;
+    color: $white;
+    border-right: 1px solid $white;
+    border-bottom: 2px solid $white;
+  }
+
+  th,td {
+    border-right: 1px solid $white;
+
+    @include susy-media(mobileOnly) {
+      min-width: 125px;
+    }
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      td,
+      th {
+        background: #ececec;
+      }
+    }
+  }
+}

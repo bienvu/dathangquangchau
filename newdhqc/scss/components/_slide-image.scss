@@ -1,0 +1,9 @@
+.slide-image {
+  .box-title {
+    margin-bottom: 40px;
+
+    @media (min-width: 480px) {
+      margin-bottom: 62px;
+    }
+  }
+}

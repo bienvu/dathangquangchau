@@ -1,0 +1,28 @@
+.box-contact {
+  background: $primary-color;
+  font-size: 20px;
+  color: #fff;
+  padding: 20px 0;
+
+  @include susy-media(desktop) {
+    font-size: 26px;
+  }
+
+  &__content {
+    text-align: center;
+
+    span {
+      @include susy-media(mobileOnly) {
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+    }
+
+    @include susy-media(tablet) {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
