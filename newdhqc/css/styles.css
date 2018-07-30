@@ -866,7 +866,7 @@ label {
     z-index: 2; }
     @media (min-width: 48em) {
       .box-hero__link {
-        margin-bottom: -28px; } }
+        margin-bottom: 0; } }
   @media screen and (max-width: 63.9375em) {
     .box-hero__image {
       padding: 0 50px; } }
