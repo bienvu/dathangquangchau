@@ -380,7 +380,7 @@ input[type='tel'],
   color: #282828;
   font-size: 14px;
   font-weight: 400;
-  padding: 14px 0;
+  padding: 10px 0;
   transition: all .3s ease-in-out;
   width: 100%;
   border-radius: 0; }
