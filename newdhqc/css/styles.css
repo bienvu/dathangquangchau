@@ -549,7 +549,7 @@ label {
   padding: 40px 0; }
   @media (min-width: 1024px) {
     .padding-component {
-      padding: 80px 0; } }
+      padding: 40px 0; } }
 
 .section-title {
   text-transform: uppercase;
@@ -861,15 +861,17 @@ label {
 
 .slick-arrow.slick-hidden {
   display: none; }
-@media (min-width: 1600px) {
-.box-hero {
-  padding-bottom: 80px;
-  padding-top: 40px; }
-}
+
 @media (min-width: 1024px) {
 .box-hero {
   padding-bottom: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  padding-top: 40px; }
+}
+@media (min-width: 1600px) {
+.box-hero {
+  padding-bottom: 80px;
+  margin-bottom: 0;
   padding-top: 40px; }
 }
   .box-hero .section-title {
@@ -1260,7 +1262,12 @@ label {
 
 .box-congcu {
   margin-bottom: -30px;
-  padding-top: 80px; }
+  padding-top: 40px; }
+  @media (min-width: 1600px) {
+    .box-congcu {
+      margin-bottom: -30px;
+      padding-top: 40px; }
+  }
   .box-congcu__content h3 {
     font-size: 16px;
     text-align: center; }
