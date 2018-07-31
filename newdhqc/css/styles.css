@@ -1237,7 +1237,7 @@ label {
     max-width: 695px;
     margin: 55px auto 0; }
   .box-register .form-wrap {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center; }
     .box-register .form-wrap .btn {
       font-size: 24px;
@@ -1661,7 +1661,7 @@ body {
         max-width: 70px; } }
         .form-group {
           position: relative;
-          margin-bottom: 1.5rem;
+          margin-bottom: 12px;
         }
 
         .form-control-placeholder {
@@ -1686,6 +1686,10 @@ body {
           transform: translate3d(0, -100%, 0);
           opacity: 1;
           top: 10px;
+        }
+
+        .form-checkbox {
+          margin-top: 21px;
         }
 .form-checkbox p {
   margin-bottom: 10px;
